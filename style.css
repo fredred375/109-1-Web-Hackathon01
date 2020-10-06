@@ -64,8 +64,17 @@ body > h1{
 .date{
     text-align: top;
     vertical-align: top;
+    border-radius: 10px;
 }
 
+.date:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.date p{
+    margin: 0;
+    padding: 0;
+}
 /*****************Themes*****************/
 .Theme-black {
     --main: black;
