@@ -6,15 +6,15 @@ input.value = ''
 color.value = '#b0b0b0'
 
 var selected_cell = cells[0];
-selected_cell.style.backgroundColor = "#000000";
-selected_cell.style.color = "#ffffff";
+selected_cell.style.backgroundColor = "var(--box)";
+selected_cell.style.color = "var(--text)";
 for (let index = 0; index < cells.length; index++) {
     const element = cells[index];
     element.addEventListener("click", ()=>{
         selected_cell.style.backgroundColor = "";
-        selected_cell.style.color = "#000000";
-        element.style.backgroundColor = "#000000";
-        element.style.color = "#ffffff";
+        selected_cell.style.color = "var(--main)";
+        element.style.backgroundColor = "var(--box)";
+        element.style.color = "var(--text)";
         selected_cell = element;
     })
 }

@@ -7,7 +7,7 @@ body, html {
 }
 body{
     padding: 10%;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(rgba(var(--bg-0), 1), rgba(var(--bg-1), 1));
 }
 table {
@@ -68,12 +68,18 @@ body > h1{
 }
 
 .date:hover{
-    background-color: rgba(0, 0, 0, 0.103);
+    background-color: var(--hover);
 }
 
 .date p{
     margin: 0;
     padding: 0;
+}
+
+.selected
+{
+    background-color: black;
+    color: var(--text);
 }
 /*****************Themes*****************/
 .Theme-black {
